@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Playground • jryaonj.github.io</title>
+  <style>
+    :root {
+      --bg: #fafafa;
+      --fg: #222;
+      --brand: #0366d6;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 2.5rem 1rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    h1 { font-size: 2rem; margin-bottom: 1.5rem; }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 28rem;
+      width: 100%;
+    }
+    li {
+      margin: .75rem 0;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      transition: box-shadow .15s ease;
+    }
+    li:hover { box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+    a {
+      display: block;
+      padding: 1rem 1.25rem;
+      text-decoration: none;
+      color: var(--fg);
+    }
+    a span.path { 
+      display: block; 
+      font-size: .875rem; 
+      color: var(--brand); 
+      word-break: break-all; 
+    }
+    footer {
+      margin-top: auto;
+      text-align: center;
+      font-size: .875rem;
+      opacity: .7;
+      padding-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>🚀 My Playground</h1>
+
+  <ul>
+    <!-- manual list sites -->
+    <li>
+      <a href="/llmcalc/">
+        <strong>LLM GPU&nbsp;VRAM Calculator</strong>
+        <span class="path">/llmcalc/</span>
+      </a>
+    </li>
+
+
+    <li>
+      <a href="#/">
+        <strong>[WIP]Tech&nbsp;Blog (VitePress)</strong>
+        <span class="path">/blog/</span>
+      </a>
+    </li>
+  </ul>
+
+  <footer>
+    <p>Built with ❤️ &nbsp;by <a href="https://github.com/jryaonj">jryaonj</a></p>
+    <p>© 2025 jryaonj · Powered by github.io</p>
+  </footer>
+
+  <!-- ▼ If you want to automatically fetch repository information in the future, you can write JS here -->
+  <!--
+  <script type="module">
+    // Example: Dynamically read the repo list returned by GitHub API, then generate li>a...
+  </script>
+  -->
+</body>
+</html>
