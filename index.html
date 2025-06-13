@@ -6,9 +6,12 @@
   <title>My Playground • jryaonj.github.io</title>
   <style>
     :root {
-      --bg: #fafafa;
+      --bg: #f7f9fc;
       --fg: #222;
-      --brand: #0366d6;
+      --brand: #2d8fff;
+      --radius: 12px;
+      --shadow-sm: 0 2px 4px rgba(0,0,0,.06);
+      --shadow-md: 0 6px 16px rgba(0,0,0,.08);
     }
     *, *::before, *::after { box-sizing: border-box; }
     body {
@@ -22,7 +25,7 @@
       flex-direction: column;
       min-height: 100vh;
     }
-    h1 { font-size: 2rem; margin-bottom: 1.5rem; }
+    h1 { font-size: 2rem; margin-bottom: 2rem; text-align: center; color: var(--brand); }
     ul {
       list-style: none;
       padding: 0;
@@ -31,12 +34,17 @@
       width: 100%;
     }
     li {
-      margin: .75rem 0;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      transition: box-shadow .15s ease;
+      margin: 1rem 0;
+      border: 1px solid #e1e4e8;
+      border-radius: var(--radius);
+      background: #fff;
+      box-shadow: var(--shadow-sm);
+      transition: transform .2s ease, box-shadow .2s ease;
     }
-    li:hover { box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+    li:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
     a {
       display: block;
       padding: 1rem 1.25rem;
@@ -49,6 +57,7 @@
       color: var(--brand); 
       word-break: break-all; 
     }
+    a strong { font-size: 1.075rem; }
     footer {
       margin-top: auto;
       text-align: center;
@@ -70,6 +79,12 @@
       </a>
     </li>
 
+    <li>
+      <a href="/simple-hardware-calculator/">
+        <strong>Simple&nbsp;Hardware&nbsp;Calculator</strong>
+        <span class="path">/simple-hardware-calculator/</span>
+      </a>
+    </li>
 
     <li>
       <a href="#/">
@@ -77,6 +92,7 @@
         <span class="path">/blog/</span>
       </a>
     </li>
+
   </ul>
 
   <footer>
